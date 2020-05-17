@@ -218,7 +218,6 @@
     <Content Include="Content\asset\fonts\linecons.ttf" />
     <Content Include="Content\asset\fonts\linecons.woff" />
     <Content Include="Content\asset\js\jquery-2.1.0.min.map" />
-    <Content Include="Content\our-menu.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -231,7 +230,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <None Include="Views\Home\blog-page.cshtml" />
-    <None Include="Views\Home\OurMenu.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
