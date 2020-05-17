@@ -1,0 +1,301 @@
+﻿
+@{
+    ViewBag.Title = "OurMenu";
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foody HTML </title>
+
+    <meta name="description" content="Foody HTML">
+
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <!-- Include modernizr-2.8.0.min.js -->
+    <script src="~/Content/asset/js/modernizr-2.8.0.min.js"></script>
+
+    <!-- Bootstrap  -->
+    <link href="~/Content/asset/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon Fonts  -->
+    <link href="~/Content/asset/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/asset/css/linecons-font-style.css" rel="stylesheet">
+
+    <!-- Plugins  -->
+    <link href="~/Content/asset/css/jquery.fs.boxer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/asset/css/owl.carousel.css">
+    <link href="~/Content/asset/css/animate.css" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link href="~/Content/asset/css/style.css" rel="stylesheet">
+    <link href="~/Content/asset/css/responsive.css" rel="stylesheet">
+
+</head>
+<body class="v2">
+
+    <!-- Menu -->
+    <div class="navbar-fixed-top main-menu-continer">
+        <!-- Responsive Navigation -->
+        <button type="button" class="btn menubar-toggle">
+            <i class="fa fa-bars"></i>
+        </button> <!-- /.navbar-toggle -->
+
+        <div id="main-menu" class="navbar navbar-default">
+            <div class="navbar-header">
+                <!-- Logo -->
+                <a class="navbar-brand" href="./">
+                    <img src="~/Content/images/logo.png" alt="Foody Logo">
+                </a><!-- /.navbar-brand -->
+            </div> <!-- /.navbar-header -->
+
+            <nav class="navbar-collapse clearfix" role="navigation">
+                <!-- Main navigation -->
+                <ul id="headernavigation" class="nav navbar-nav">
+                    <li><a href="~/Views/Home/Index.cshtml#top-section">Home</a></li>
+                    <li><a href="~/Views/Home/Index.cshtml#welcome">About</a></li>
+                    <li><a href="~/Views/Home/Index.cshtml#our-menus">Menu</a></li>
+                    <li><a href="~/Views/Home/Index.cshtml#events">Events</a></li>
+                    <li class="menu-item-has-children active">
+                        <a href="index.html#blog">Blog</a>
+                        <ul class="sub-menu">
+
+                            <li><a href="~/Views/Home/OurMenu.cshtml">Our Menu</a></li>
+                        </ul><!-- /.sub-menu -->
+                    </li><!-- /.menu-item-has-children -->
+                    <li><a href="~/Views/Home/Index.cshtml#our-crew">Team</a></li>
+                    <li><a href="~/Views/Home/Index.cshtml#contact">Contact</a></li>
+                </ul> <!-- /.nav .navbar-nav -->
+            </nav> <!-- /.navbar-collapse  -->
+
+            <div class="nav-social-btn">
+                <a href="#" class="twitter-btn"><i class="fa fa-twitter-square"></i></a>
+                <a href="#" class="facebook-btn"><i class="fa fa-facebook-square"></i></a>
+                <a href="#" class="pinterest-btn"><i class="fa fa-pinterest-square"></i></a>
+                <a href="#" class="youtube-btn"><i class="fa fa-youtube-square"></i></a>
+            </div><!-- /.nav-social-btn -->
+        </div><!-- /#main-menu -->
+
+    </div><!-- /.main-menu-continer -->
+    <!-- Menu End -->
+
+
+
+
+    <div class="container">
+        <div class="row">
+
+            <!-- Main Container -->
+            <div id="main-container" class="main-container pull-right">
+
+                <!-- Our Menus -->
+                <section id="our-menus">
+                    <div class="our-menu section-padding menu-page">
+                        <div class="section-title-container">
+                            <h2 class="section-title">Our Menus</h2>
+                        </div><!-- /.section-title-container -->
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <article class="menus-container wow fadeIn animated" data-wow-delay="0.1s">
+                                    <div class="featured-img">
+                                        <img src="~/Content/images/menus/br.jpg" alt="Breakfast Menus Image">
+                                        <a href="~/Content/images/menus/br.jpg" class="boxer img-link"></a>
+                                    </div><!-- /.featured-img -->
+                                    <h4 class="item-title"> Breakfast </h4>
+                                    <div class="item-entry">
+                                        <p>
+                                            Bake English muffins to create a crispier version of classic French toast. Layer muffin halves with tart lemon sugar and strawberries,with more berries.
+                                        </p>
+                                    </div><!-- /.item-entry -->
+                                </article><!-- /.menus-container -->
+                            </div><!-- /.col-sm-6 -->
+
+                            <div class="col-sm-6">
+                                <article class="menus-container wow fadeIn animated" data-wow-delay="0.2s">
+                                    <div class="featured-img">
+                                        <img src="~/Content/images/menus/lch.jpg" alt="Lunch Menus Image">
+                                        <a href="~/Content/images/menus/lch.jpg" class="boxer img-link"></a>
+                                    </div><!-- /.featured-img -->
+                                    <h4 class="item-title"> Lunch </h4>
+                                    <div class="item-entry">
+                                        <p>
+                                            Peppery watercress is a perfect counterpoint to the bold flavors of the dressing on this super-size and satisfying sandwich. Perfect for your today lunch.
+                                        </p>
+                                    </div><!-- /.item-entry -->
+                                </article><!-- /.menus-container -->
+                            </div><!-- /.col-sm-6 -->
+
+                            <div class="col-sm-6">
+                                <article class="menus-container wow fadeIn animated" data-wow-delay="0.1s">
+                                    <div class="featured-img">
+                                        <img src="~/Content/images/menus/ds.jpg" alt="Desert Menus Image">
+                                        <a href="~/Content/images/menus/ds.jpg" class="boxer img-link"></a>
+                                    </div><!-- /.featured-img -->
+                                    <h4 class="item-title"> Desert </h4>
+                                    <div class="item-entry">
+                                        <p>
+                                            Thinly sliced apples create rich, moist layers of fruit within the cake. Top with your choice of Browned Butter Frosting, Cream Cheese Frosting.
+                                        </p>
+                                    </div><!-- /.item-entry -->
+                                </article><!-- /.menus-container -->
+                            </div><!-- /.col-sm-6 -->
+
+                            <div class="col-sm-6">
+                                <article class="menus-container wow fadeIn animated" data-wow-delay="0.2s">
+                                    <div class="featured-img">
+                                        <img src="~/Content/images/menus/dn.jpg" alt="Dinner Menus Image">
+                                        <a href="~/Content/images/menus/dn.jpg" class="boxer img-link"></a>
+                                    </div><!-- /.featured-img -->
+                                    <h4 class="item-title"> Dinner </h4>
+                                    <div class="item-entry">
+                                        <p>
+                                            Layered with brandy, dry sherry and sweet onions, Ina Garten's soup staple is best soaked up with crusty bread. Take a delicious dinner now.
+                                        </p>
+                                    </div><!-- /.item-entry -->
+                                </article><!-- /.menus-container -->
+                            </div><!-- /.col-sm-6 -->
+                            <div class="col-sm-6">
+                                <article class="menus-container wow fadeIn animated" data-wow-delay="0.1s">
+                                    <div class="featured-img">
+                                        <img src="~/Content/images/menus/br.jpg" alt="Breakfast Menus Image">
+                                        <a href="~/Content/images/menus/br.jpg" class="boxer img-link"></a>
+                                    </div><!-- /.featured-img -->
+                                    <h4 class="item-title"> Breakfast </h4>
+                                    <div class="item-entry">
+                                        <p>
+                                            Bake English muffins to create a crispier version of classic French toast. Layer muffin halves with tart lemon sugar and strawberries,with more berries.
+                                        </p>
+                                    </div><!-- /.item-entry -->
+                                </article><!-- /.menus-container -->
+                            </div><!-- /.col-sm-6 -->
+
+                            <div class="col-sm-6">
+                                <article class="menus-container wow fadeIn animated" data-wow-delay="0.2s">
+                                    <div class="featured-img">
+                                        <img src="~/Content/images/menus/lch.jpg" alt="Lunch Menus Image">
+                                        <a href="~/Content/images/menus/lch.jpg" class="boxer img-link"></a>
+                                    </div><!-- /.featured-img -->
+                                    <h4 class="item-title"> Lunch </h4>
+                                    <div class="item-entry">
+                                        <p>
+                                            Peppery watercress is a perfect counterpoint to the bold flavors of the dressing on this super-size and satisfying sandwich. Perfect for your today lunch.
+                                        </p>
+                                    </div><!-- /.item-entry -->
+                                </article><!-- /.menus-container -->
+                            </div><!-- /.col-sm-6 -->
+
+                            <div class="col-sm-6">
+                                <article class="menus-container wow fadeIn animated" data-wow-delay="0.1s">
+                                    <div class="featured-img">
+                                        <img src="~/Content/images/menus/ds.jpg" alt="Desert Menus Image">
+                                        <a href="~/Content/images/menus/ds.jpg" class="boxer img-link"></a>
+                                    </div><!-- /.featured-img -->
+                                    <h4 class="item-title"> Desert </h4>
+                                    <div class="item-entry">
+                                        <p>
+                                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh.
+                                        </p>
+                                    </div><!-- /.item-entry -->
+                                </article><!-- /.menus-container -->
+                            </div><!-- /.col-sm-6 -->
+
+                            <div class="col-sm-6">
+                                <article class="menus-container wow fadeIn animated" data-wow-delay="0.2s">
+                                    <div class="featured-img">
+                                        <img src="~/Content/images/menus/dn.jpg" alt="Dinner Menus Image">
+                                        <a href="~/Content/images/menus/dn.jpg" class="boxer img-link"></a>
+                                    </div><!-- /.featured-img -->
+                                    <h4 class="item-title"> Dinner </h4>
+                                    <div class="item-entry">
+                                        <p>
+                                            Thinly sliced apples create rich, moist layers of fruit within the cake. Top with your choice of Browned Butter Frosting, Cream Cheese Frosting.
+                                        </p>
+                                    </div><!-- /.item-entry -->
+                                </article><!-- /.menus-container -->
+                            </div><!-- /.col-sm-6 -->
+
+                            <div class="col-sm-6">
+                                <article class="menus-container wow fadeIn animated" data-wow-delay="0.1s">
+                                    <div class="featured-img">
+                                        <img src="~/Content/images/menus/br.jpg" alt="Breakfast Menus Image">
+                                        <a href="~/Content/images/menus/br.jpg" class="boxer img-link"></a>
+                                    </div><!-- /.featured-img -->
+                                    <h4 class="item-title"> Breakfast </h4>
+                                    <div class="item-entry">
+                                        <p>
+                                            Bake English muffins to create a crispier version of classic French toast. Layer muffin halves with tart lemon sugar and strawberries,with more berries.
+                                        </p>
+                                    </div><!-- /.item-entry -->
+                                </article><!-- /.menus-container -->
+                            </div><!-- /.col-sm-6 -->
+
+                            <div class="col-sm-6">
+                                <article class="menus-container wow fadeIn animated" data-wow-delay="0.2s">
+                                    <div class="featured-img">
+                                        <img src="~/Content/images/menus/lch.jpg" alt="Lunch Menus Image">
+                                        <a href="~/Content/images/menus/lch.jpg" class="boxer img-link"></a>
+                                    </div><!-- /.featured-img -->
+                                    <h4 class="item-title"> Lunch </h4>
+                                    <div class="item-entry">
+                                        <p>
+                                            Peppery watercress is a perfect counterpoint to the bold flavors of the dressing on this super-size and satisfying sandwich. Perfect for your today lunch.
+                                        </p>
+                                    </div><!-- /.item-entry -->
+                                </article><!-- /.menus-container -->
+                            </div><!-- /.col-sm-6 -->
+                        </div><!-- /.row -->
+
+
+                    </div><!-- /.our-menu -->
+                </section><!-- /#our-menus -->
+                <!-- Our Menus End -->
+
+            </div><!-- /#main-container -->
+            <!-- Main Container End -->
+
+
+
+
+
+
+            <div id="scroll-to-top">
+                <div class="go-to-top">
+                    <i class="fa fa-angle-double-up"></i>
+                </div><!-- /.go-to-top -->
+            </div><!-- /#scroll-to-top -->
+            <!-- Footer Section -->
+            <footer id="footer-section" class="main-container pull-right">
+
+
+                <div class="copyrights ">
+
+                    &copy; <a href="#">Foody</a>  2020 - All Rights Reserved <span class="v-line"></span>
+
+                </div><!-- /.copyrights -->
+            </footer><!-- /#footer-section -->
+            <!-- Footer Section End -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+    <!-- Include jquery.min.js plugin -->
+    <script src="~/Content/asset/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Include JavaScript Plugins -->
+    <script src="~/Content/asset/js/plugins.js"></script>
+
+    <!-- Include jquery.parallax.js Plugins -->
+    <script src="~/Content/asset/js/jquery.parallax.js"></script>
+
+    <!-- Include wow.js Plugins -->
+    <script src="~/Content/asset/js/wow.min.js"></script>
+
+    <!-- Include JavaScript Functions -->
+    <script src="~/Content/asset/js/functions.js"></script>
+
+</body>
+</html>
+

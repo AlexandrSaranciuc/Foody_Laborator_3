@@ -26,5 +26,17 @@ namespace Foody_.Controllers
 
             return View();
         }
+        public ViewResult OurMenu()
+        {
+            return View("~/Views/Shared/OurMenu.cshtml");
+        }
+        public ViewResult blog_page()
+        {
+            return View("~/Views/Shared/blog_page.cshtml");
+        }
+        public ViewResult single_page()
+        {
+            return View("~/Views/Shared/single_page.cshtml");
+        }
     }
 }

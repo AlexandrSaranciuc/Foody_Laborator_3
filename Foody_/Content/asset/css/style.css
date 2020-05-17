@@ -378,19 +378,19 @@ textarea.form-control{
 	background-attachment: fixed; 
 } 
 #top-section {
-	background-image: url(../../images/background/top-section-bg.jpg);
+	background-image: url(../images/1.jpg);
 }
 #book-table {
-	background-image: url(../../images/background/book-table-bg.jpg);
+    background-image: url(../images/2.jpg);
 }
 #mobile-app {
-	background-image: url(../../images/background/mobile-app-bg.jpg);
+    background-image: url(../images/3.jpg);
 }
 #testimonial {
-	background-image: url(../../images/background/testimonial-bg.jpg);
+    background-image: url(../images/4.jpg);
 }
 #tweet {
-	background-image: url(../../images/background/tweet-bg.jpg);
+    background-image: url(../images/5.jpg);
 }
 /* 2.6 - Parallax  End
 ---------------------------------------------*/

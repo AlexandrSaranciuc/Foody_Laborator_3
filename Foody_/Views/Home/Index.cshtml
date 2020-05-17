@@ -1,4 +1,6 @@
-﻿
+﻿@{
+    ViewBag.Title = "Index";
+}
 <!doctype html>
 <html lang="en">
 <head>
@@ -23,7 +25,7 @@
     <link href="~/Content/asset/css/jquery.fs.boxer.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/Content/asset/css/owl.carousel.css">
     <link href="~/Content/asset/css/animate.css" rel="stylesheet" />
-  
+
     <!-- Custom Styles -->
     <link href="~/Content/asset/css/style.css" rel="stylesheet">
     <link href="~/Content/asset/css/responsive.css" rel="stylesheet">
@@ -53,6 +55,15 @@
                     <li><a href="#welcome">About</a></li>
                     <li><a href="#our-menus">Menu</a></li>
                     <li><a href="#events">Events</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#blog">Blog</a>
+                        <ul class="sub-menu">
+
+                            <li>@Html.ActionLink("OurMenu", "OurMenu", "Home")</li>
+                            <li>@Html.ActionLink("Blog page", "blog_page", "Home")</li>
+                            <li>@Html.ActionLink("Single page", "single_page", "Home")</li>
+                        </ul><!-- /.sub-menu -->
+                    </li><!-- /.menu-item-has-children -->
                     <li><a href="#our-crew">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul> <!-- /.nav .navbar-nav -->
@@ -187,6 +198,18 @@
                                 </div><!-- /.item -->
                             </div><!-- /#welcome-slider -->
                         </div><!-- /.row -->
+                        <div class="best-deal">
+                            <img src="~/Content/images/welcome/foods-in-tray.jpg" alt="Foods Image" class="foods-img">
+                            <div class="best-deal-content">
+                                <div class="row">
+                                    <div class="col-sm-6 pull-right">
+                                        <h3 class="deal-txt-1"> Best Deal </h3>
+                                        <h3 class="deal-txt-2"> Chicken Fry + Beef Grills  </h3>
+                                        <h4 class="deal-txt-3"> Only <span>25</span> </h4>
+                                    </div><!-- /.col-sm-6 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.best-deal-content -->
+                        </div><!-- /.best-deal -->
 
                     </div><!-- /.welcome-section -->
                 </section><!-- /#welcome -->
@@ -202,8 +225,8 @@
                             <div class="col-md-4">
                                 <article class="menus-container wow fadeIn animated" data-wow-delay="0.1s">
                                     <div class="featured-img">
-                                        <img src="~/Content/images/menus/breakfast.jpg" alt="Breakfast Menus Image">
-                                        <a href="~/Content/images/menus/breakfast-big.jpg" class="boxer img-link"></a>
+                                        <img src="~/Content/images/menus/br.jpg" alt="Breakfast Menus Image">
+                                        <a href="~/Content/images/menus/br.jpg" class="boxer img-link"></a>
                                     </div><!-- /.featured-img -->
                                     <h4 class="item-title"> Breakfast </h4>
                                     <div class="item-entry">
@@ -217,8 +240,8 @@
                             <div class="col-md-4">
                                 <article class="menus-container wow fadeIn animated" data-wow-delay="0.2s">
                                     <div class="featured-img">
-                                        <img src="~/Content/images/menus/lunch.jpg" alt="Lunch Menus Image">
-                                        <a href="~/Content/images/menus/lunch-big.jpg" class="boxer img-link"></a>
+                                        <img src="~/Content/images/menus/lch.jpg" alt="Lunch Menus Image">
+                                        <a href="~/Content/images/menus/lch.jpg" class="boxer img-link"></a>
                                     </div><!-- /.featured-img -->
                                     <h4 class="item-title"> Lunch </h4>
                                     <div class="item-entry">
@@ -232,8 +255,8 @@
                             <div class="col-md-4">
                                 <article class="menus-container wow fadeIn animated" data-wow-delay="0.1s">
                                     <div class="featured-img">
-                                        <img src="~/Content/images/menus/desert.jpg" alt="Desert Menus Image">
-                                        <a href="~/Content/images/menus/desert-big.jpg" class="boxer img-link"></a>
+                                        <img src="~/Content/images/menus/ds.jpg" alt="Desert Menus Image">
+                                        <a href="~/Content/images/menus/ds.jpg" class="boxer img-link"></a>
                                     </div><!-- /.featured-img -->
                                     <h4 class="item-title"> Desert </h4>
                                     <div class="item-entry">
@@ -246,11 +269,73 @@
 
                         </div><!-- /.row -->
                         <div class="btn-container">
-                            <a href="our-menu.html" class="btn btn-sm btn-orange">See Full Menu</a>
+                            <div class="btn btn-sm btn-orange">
+                                @Html.ActionLink("See Full Menu", "OurMenu", "Home")
+                            </div>
                         </div><!-- /.btn-container -->
 
                     </div><!-- /.our-menu -->
                 </section><!-- /#our-menus -->
+                <section id="book-table" class="parallax-style">
+                    <div class="book-table overlay-light section-padding">
+                        <div class="section-title-container">
+                            <h2 class="section-title">Book your table </h2>
+                        </div><!-- /.section-title-container -->
+
+                        <div class="choose-table">
+                            <form action="#" method="post" class="choose-table-form">
+                                <div class="col-sm-4 form-item">
+                                    <select class="form-control">
+                                        <option value="">Select Dining Space</option>
+                                        <option value="space-1">Space-1</option>
+                                        <option value="space-2">Space-2</option>
+                                        <option value="space-3">Space-3</option>
+                                        <option value="space-4">Space-4</option>
+                                        <option value="space-5">Space-5</option>
+                                    </select><!-- /.form-control -->
+                                </div><!-- /.form-item -->
+
+                                <div class="col-sm-4 form-item">
+                                    <select class="form-control">
+                                        <option value="">Select Occasion</option>
+                                        <option value="occasion-1">Occasion-1</option>
+                                        <option value="occasion-2">Occasion-2</option>
+                                        <option value="occasion-3">Occasion-3</option>
+                                        <option value="occasion-4">Occasion-4</option>
+                                        <option value="occasion-5">Occasion-5</option>
+                                    </select><!-- /.form-control -->
+                                </div><!-- /.form-item -->
+
+                                <div class="col-sm-4 form-item">
+                                    <select class="form-control">
+                                        <option value="">Select Preferred Food</option>
+                                        <option value="food-item-1">food-item-1</option>
+                                        <option value="food-item-2">food-item-2</option>
+                                        <option value="food-item-3">food-item-3</option>
+                                        <option value="food-item-4">food-item-4</option>
+                                        <option value="food-item-5">food-item-5</option>
+                                    </select><!-- /.form-control -->
+                                </div><!-- /.form-item -->
+
+                                <div class="col-sm-4 form-item">
+                                    <input type="text" class="form-control" name="clients_name" id="clients_name" placeholder="Your Name" required>
+                                </div><!-- /.form-item -->
+
+                                <div class="col-sm-4 form-item">
+                                    <input type="text" class="form-control" name="clients_phone" id="clients_phone" placeholder="Your Phone" required>
+                                </div><!-- /.form-item -->
+
+                                <div class="col-sm-4 form-item">
+                                    <input type="text" class="form-control" name="clients_email" id="clients_email" placeholder="Email Address" required>
+                                </div><!-- /.form-item -->
+                                <div class="btn-container">
+                                    <button type="submit" class="btn btn-sm btn-light-green">Book Table Now</button>
+                                </div><!-- /.btn-container -->
+
+                            </form><!-- /.choose-table-form -->
+                        </div><!-- /.choose-table -->
+                    </div><!-- /.book-table -->
+                </section><!-- /#book-table -->
 
 
                 <section id="events">
@@ -354,19 +439,16 @@
                                             </div><!-- /.entry-meta -->
                                         </div><!-- /.post-meta -->
                                         <div class="featured-img">
-                                            <img class="blog-post-image" src="Content/images/blog/image-1.jpg" alt="Blog Post Image">
+                                            <img class="blog-post-image" src="~/Content/images/blog/image-1.jpg" alt="Blog Post Image">
                                             <a href="~/Content/images/blog/big-image.jpg" class="boxer img-link"></a>
                                         </div><!-- /.featured-img -->
                                         <div class="post-container">
                                             <h2 class="post-title">
-                                                <a href="single-page.html">We provide safe food with delicious menu</a>
+                                                @Html.ActionLink("We provide safe food with delicious menu", "single_page", "Home")
                                             </h2><!-- /.post-title -->
                                             <p class="post-description">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quam consectetur deserunt delectus, maxime natus aperiam libero molestiae beatae
                                             </p>
-                                            <div class="continue-reading pull-left">
-                                                <a href="blog-single.html">Read More <i class="fa fa-angle-double-right"></i>  </a>
-                                            </div><!-- /.continue-reading -->
                                         </div><!-- /.post-container -->
                                     </article><!-- /.post-content -->
                                 </div><!-- /.col-sm-6 -->
@@ -382,19 +464,17 @@
                                             </div><!-- /.entry-meta -->
                                         </div><!-- /.post-meta -->
                                         <div class="featured-img">
-                                            <img class="blog-post-image" src="Content/images/blog/image-2.jpg" alt="Blog Post Image">
+                                            <img class="blog-post-image" src="~/Content/images/blog/image-2.jpg" alt="Blog Post Image">
                                             <a href="~/Content/images/blog/big-image.jpg" class="boxer img-link"></a>
                                         </div><!-- /.featured-img -->
                                         <div class="post-container">
                                             <h2 class="post-title">
-                                                <a href="single-page.html">Eggs are most important for breakfast</a>
+                                                @Html.ActionLink("Eggs are most important for breakfast", "single_page", "Home")
                                             </h2><!-- /.post-title -->
                                             <p class="post-description">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quam consectetur deserunt delectus, maxime natus aperiam libero molestiae beatae
                                             </p>
-                                            <div class="continue-reading pull-left">
-                                                <a href="blog-single.html">Read More <i class="fa fa-angle-double-right"></i>  </a>
-                                            </div><!-- /.continue-reading -->
+
                                         </div><!-- /.post-container -->
                                     </article><!-- /.post-content -->
                                 </div><!-- /.col-sm-6 -->
@@ -410,19 +490,17 @@
                                             </div><!-- /.entry-meta -->
                                         </div><!-- /.post-meta -->
                                         <div class="featured-img">
-                                            <img class="blog-post-image" src="images/blog/image-3.jpg" alt="Blog Post Image">
+                                            <img class="blog-post-image" src="~/Content/images/blog/image-3.jpg" alt="Blog Post Image">
                                             <a href="~/Content/images/blog/big-image.jpg" class="boxer img-link"></a>
                                         </div><!-- /.featured-img -->
                                         <div class="post-container">
                                             <h2 class="post-title">
-                                                <a href="single-page.html">We know how to cook &amp; make better Pasta</a>
+                                                @Html.ActionLink("We know how to cook &amp; make better Pasta", "single_page", "Home")
                                             </h2><!-- /.post-title -->
                                             <p class="post-description">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quam consectetur deserunt delectus, maxime natus aperiam libero molestiae beatae
                                             </p>
-                                            <div class="continue-reading pull-left">
-                                                <a href="blog-single.html">Read More <i class="fa fa-angle-double-right"></i>  </a>
-                                            </div><!-- /.continue-reading -->
+
                                         </div><!-- /.post-container -->
                                     </article><!-- /.post-content -->
                                 </div><!-- /.col-sm-6 -->
@@ -438,26 +516,26 @@
                                             </div><!-- /.entry-meta -->
                                         </div><!-- /.post-meta -->
                                         <div class="featured-img">
-                                            <img class="blog-post-image" src="Content/images/blog/image-4.jpg" alt="Blog Post Image">
+                                            <img class="blog-post-image" src="~/Content/images/blog/image-4.jpg" alt="Blog Post Image">
                                             <a href="~/Content/images/blog/big-image.jpg" class="boxer img-link"></a>
                                         </div><!-- /.featured-img -->
                                         <div class="post-container">
                                             <h2 class="post-title">
-                                                <a href="single-page.html">Do you know Vegetables are most important?</a>
+                                                @Html.ActionLink("Do you know Vegetables are most important?", "single_page", "Home")
                                             </h2><!-- /.post-title -->
                                             <p class="post-description">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quam consectetur deserunt delectus, maxime natus aperiam libero molestiae beatae
                                             </p>
-                                            <div class="continue-reading pull-left">
-                                                <a href="blog-single.html">Read More <i class="fa fa-angle-double-right"></i>  </a>
-                                            </div><!-- /.continue-reading -->
+
                                         </div><!-- /.post-container -->
                                     </article><!-- /.post-content -->
                                 </div><!-- /.col-sm-6 -->
                             </div><!-- /.row -->
 
                             <div class="btn-container">
-                                <a href="blog-page.html" class="btn btn-sm btn-orange"> View All Posts </a>
+                                <div class="btn btn-sm btn-orange">
+                                    @Html.ActionLink("View All Posts", "blog_page", "Home")
+                                </div>
                             </div><!-- /.btn-container -->
 
                         </div><!-- /.blog-post-container -->
@@ -477,7 +555,7 @@
                                 <div class="item active">
                                     <div class="testimonial-figure">
                                         <div class="author-avatar">
-                                            <img class="img-circle" src="~/Content/images/testimonial-carousel/01.png" alt="carousel image">
+                                            <img class="img-circle" src="~/Content/images/testimotional-carousel/01.png" alt="carousel image">
                                         </div><!-- /.author-avatar -->
                                         <div class="authors-review">
                                             <p class="author-says">
@@ -749,6 +827,6 @@
 
         </div><!-- /.row -->
     </div><!-- /.container -->
-    
+
 </body>
 </html>

@@ -139,6 +139,11 @@
     <Content Include="Content\asset\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\asset\fonts\index.html" />
     <Content Include="Content\asset\fonts\linecons.svg" />
+    <Content Include="Content\asset\images\1.jpg" />
+    <Content Include="Content\asset\images\2.jpg" />
+    <Content Include="Content\asset\images\3.jpg" />
+    <Content Include="Content\asset\images\4.jpg" />
+    <Content Include="Content\asset\images\5.jpg" />
     <Content Include="Content\asset\images\AjaxLoader.gif" />
     <Content Include="Content\asset\images\background.png" />
     <Content Include="Content\asset\images\Dot.png" />
@@ -164,6 +169,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\background\1.jpg" />
     <Content Include="Content\images\blog\image-1.jpg" />
     <Content Include="Content\images\blog\image-10.jpg" />
     <Content Include="Content\images\blog\image-2.jpg" />
@@ -189,14 +195,10 @@
     <Content Include="Content\images\event\event-4.jpg" />
     <Content Include="Content\images\logo--.png" />
     <Content Include="Content\images\logo.png" />
-    <Content Include="Content\images\menus\breakfast-big.jpg" />
-    <Content Include="Content\images\menus\breakfast.jpg" />
-    <Content Include="Content\images\menus\desert-big.jpg" />
-    <Content Include="Content\images\menus\desert.jpg" />
-    <Content Include="Content\images\menus\dinner-big.jpg" />
-    <Content Include="Content\images\menus\dinner.jpg" />
-    <Content Include="Content\images\menus\lunch-big.jpg" />
-    <Content Include="Content\images\menus\lunch.jpg" />
+    <Content Include="Content\images\menus\br.jpg" />
+    <Content Include="Content\images\menus\ds.jpg" />
+    <Content Include="Content\images\menus\dn.jpg" />
+    <Content Include="Content\images\menus\lch.jpg" />
     <Content Include="Content\images\testimotional-carousel\01.png" />
     <Content Include="Content\images\testimotional-carousel\02.png" />
     <Content Include="Content\images\testimotional-carousel\03.png" />
@@ -216,6 +218,7 @@
     <Content Include="Content\asset\fonts\linecons.ttf" />
     <Content Include="Content\asset\fonts\linecons.woff" />
     <Content Include="Content\asset\js\jquery-2.1.0.min.map" />
+    <Content Include="Content\our-menu.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -227,6 +230,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <None Include="Views\Home\blog-page.cshtml" />
+    <None Include="Views\Home\OurMenu.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -241,10 +246,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\OurMenu.cshtml" />
+    <Content Include="Views\Shared\blog_page.cshtml" />
+    <Content Include="Views\Shared\single_page.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\background\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
