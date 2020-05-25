@@ -128,7 +128,9 @@ span.v-line:before {
 .alert {
 	overflow: hidden;
 }
-
+#disqus_thread{
+    width : 900px;
+}
 /* 2.1 - Headings 
 --------------------------------------------- */
 h1,
@@ -137,11 +139,11 @@ h3,
 h4,
 h5,
 h6 {
-	color: #1a1a1a;
-	font-weight: 700;
-	font-family: 'BenchNine', sans-serif;
-	text-transform: uppercase;
-	margin: 15px 0;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-family: 'BenchNine', sans-serif;
+    text-transform: uppercase;
+    margin: 15px 0;
 }
 h1 { font-size: 2em; }
 h2 { font-size: 1.75em; }
