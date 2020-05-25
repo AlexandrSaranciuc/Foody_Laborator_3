@@ -276,40 +276,7 @@
 
                     </div><!-- /.our-menu -->
                 </section><!-- /#our-menus -->
-                @model Foody_.Models.Book
-
-                @{
-                    Layout = "~/Views/Shared/_Layout.cshtml";
-                }
-
-                @using (Html.BeginForm())
-                {
-                    @Html.LabelFor(model => model.Space, "Место")
-                    <br />
-                    @Html.EditorFor(model => model.Space)
-                    <br /><br />
-                    @Html.LabelFor(model => model.Occasion, "Праздник")
-                    <br />
-                    @Html.EditorFor(model => model.Occasion)
-                    <br /><br />
-                    @Html.LabelFor(model => model.Food, "Еда")
-                    <br />
-                    @Html.EditorFor(model => model.Food)
-                    <br /><br />
-                    @Html.LabelFor(model => model.Name, "Имя")
-                    <br />
-                    @Html.EditorFor(model => model.Name)
-                    <br /><br />
-                    @Html.LabelFor(model => model.Phone, "Телефон")
-                    <br />
-                    @Html.EditorFor(model => model.Phone)
-                    <br /><br />
-                    @Html.LabelFor(model => model.Email, "Email")
-                    <br />
-                    @Html.EditorFor(model => model.Email)
-                    <br /><br />
-                    <input type="submit" value="Добавить" />
-                }
+               
                 <section id="book-table" class="parallax-style">
                     <div class="book-table overlay-light section-padding">
                         <div class="section-title-container">
