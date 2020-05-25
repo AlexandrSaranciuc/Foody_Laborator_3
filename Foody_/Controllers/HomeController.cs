@@ -2,29 +2,37 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 using System.Web.Mvc;
+using Foody_.Models;
 
 namespace Foody_.Controllers
 {
     public class HomeController : Controller
     {
+        BookContext db = new BookContext();
         public ActionResult Index()
         {
+            return View(db.Books);
+        }
+       
+        public ActionResult Create()
+        {
             return View();
         }
-
-        public ActionResult About()
+      
+        public ActionResult Create(Book book)
         {
-            ViewBag.Message = "Your application description page.";
+            db.Books.Add(book);
+            db.SaveChanges();
 
-            return View();
+            return RedirectToAction("Index");
         }
 
-        public ActionResult Contact()
+        protected override void Dispose(bool disposing)
         {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            db.Dispose();
+            base.Dispose(disposing);
         }
         public ViewResult OurMenu()
         {
