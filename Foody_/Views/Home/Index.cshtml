@@ -278,8 +278,9 @@
                 </section><!-- /#our-menus -->
                 @model Foody_.Models.Book
 
-               
-                <h2>Новая книга</h2>
+                @{
+                    Layout = "~/Views/Shared/_Layout.cshtml";
+                }
 
                 @using (Html.BeginForm())
                 {
